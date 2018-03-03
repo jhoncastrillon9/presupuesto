@@ -30,6 +30,7 @@ Usuarios
 				    </tr>
 				  </thead>
 				  <tbody>   
+				  	<!--foreach para que traia los datos de la bd y los cargue en fila-->
 						@foreach($tablausuarios as $usuario)
 						 	<tr>
 						      <th scope="row">{{ $usuario->Idusuario }}</th>

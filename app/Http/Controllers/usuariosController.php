@@ -76,9 +76,11 @@ class usuariosController extends Controller
 	//para guardar los cambios del formulario del edit // actualizar la informacion y guardar en la bd
 		public function update(request $request, $id)
 	{
-
+		//busca por el ID el usuario
 		$usuario = usuario::find($id);
 		
+		//crea variable para cambiar la info
+		//reques trae los datos del fromulario
 		$usuario->Email = $request->Email;
 		$usuario->Password = $request->Password;
 		$usuario->save();
